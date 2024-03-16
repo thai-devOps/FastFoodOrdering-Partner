@@ -1,0 +1,45 @@
+.dropdown-enter {
+  opacity: 0;
+  transform: scale(0.95);
+}
+
+.dropdown-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+}
+
+.dropdown-exit {
+  opacity: 1;
+}
+
+.dropdown-exit-active {
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+}
+.dropdown-menu {
+  position: absolute;
+  top: 0;
+  left: -100%; /* Đẩy dropdown menu sang bên trái */
+  z-index: 10;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+  /* Các thuộc tính CSS khác tùy theo yêu cầu của bạn */
+}
+.arrow-down {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  top: -20px;
+  right: 4px;
+  border-width: 12px;
+  border-style: solid;
+  border-color: transparent transparent white transparent;
+  border-left-width: 0;
+  border-right-width: 12px;
+  border-bottom-width: 12px;
+}
